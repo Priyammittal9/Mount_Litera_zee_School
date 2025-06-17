@@ -22,7 +22,7 @@ const Testimonials = () => {
   const handleNext = () => setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
   return (
-    <section className="py-16 bg-gradient-to-r from-pink-400 to-pink-500 relative ">
+    <section id="testimonials" className="py-16 bg-gradient-to-r from-pink-400 to-pink-500 relative ">
       {/* Background decorative elements */}
       <div className="absolute top-10 right-10 w-16 h-16 bg-orange-400 opacity-80 rounded-lg transform rotate-12"></div>
       <div className="absolute bottom-20 right-20 w-12 h-12 bg-yellow-400 opacity-80 rounded-lg transform -rotate-12"></div>

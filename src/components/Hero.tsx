@@ -1,7 +1,7 @@
 import UiButton from '@/components/ui/UiButton';
 
 const HeroSection = () => (
-  <section
+  <section id='home'
     className="relative pt-36 pb-20 overflow-hidden"
     style={{
       background: "radial-gradient(ellipse at 60% 0%, #b84be6 0%, #8e24aa 60%, #6a1b9a 100%)",

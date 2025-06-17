@@ -42,7 +42,7 @@ const LatestNews = () => {
   ];
 
   return (
-    <section className="py-16 bg-white relative overflow-hidden">
+    <section id='news' className="py-16 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-2">Latest News</h2>

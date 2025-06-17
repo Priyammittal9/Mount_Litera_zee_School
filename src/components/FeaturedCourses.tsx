@@ -29,7 +29,7 @@ const courses = [
 
 const FeaturedCourses = () => {
 	return (
-		<section className="py-20 bg-[#2d21c6] relative">
+		<section id="courses" className="py-20 bg-[#2d21c6] relative">
 			
 
 

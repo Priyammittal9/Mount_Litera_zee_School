@@ -8,7 +8,7 @@ const activities = [
 ];
 
 const Activities = () => (
-  <section className="relative overflow-hidden bg-white pb-[50px] pt-[50px]">
+  <section id="activities" className="relative overflow-hidden bg-white pb-[50px] pt-[50px]">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-4 sm:px-6 lg:px-8 gap-3">
       {/* Left Content */}
       <div className="flex-1 max-w-xl">
