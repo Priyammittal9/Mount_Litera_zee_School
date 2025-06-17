@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 import UiButton from '@/components/ui/UiButton';
 
@@ -33,11 +33,34 @@ const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, hre
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY <= 0) {
+        setShowHeader(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        setShowHeader(false); // scrolling down
+      } else {
+        setShowHeader(true); // scrolling up
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => setIsMenuOpen((open) => !open);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-300
+        ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}
+      style={{ willChange: 'transform' }}
+    >
       <div className="max-w-full mx-auto px-4 sm:px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-3 flex-shrink-0">
@@ -124,7 +147,7 @@ const Header = () => {
               style={{ fontSize: "1.1rem", padding: "12px 30px", marginTop: "8px" }}
               className="outline-none border-none font-medium"
             >
-              Enroll Now
+              Admission
             </UiButton>
           </nav>
         </div>

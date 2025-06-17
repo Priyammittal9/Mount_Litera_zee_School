@@ -1,8 +1,9 @@
 import UiButton from '@/components/ui/UiButton';
 
 const HeroSection = () => (
-  <section id='home'
-    className="relative pt-36 pb-20 overflow-hidden"
+  <section
+    id='home'
+    className="relative pt-[100px] pb-[80px] overflow-hidden w-full"
     style={{
       background: "radial-gradient(ellipse at 60% 0%, #b84be6 0%, #8e24aa 60%, #6a1b9a 100%)",
       color: "#fff"
@@ -12,11 +13,10 @@ const HeroSection = () => (
     <span
       style={{
         position: "absolute",
-        top: "28%",
+        bottom: "0",
         left: "0",
-        width: "100%",
         textAlign: "center",
-        fontSize: "200px",
+        fontSize: "120px",
         fontWeight: 700,
         color: "rgba(255,255,255,0.07)",
         letterSpacing: "0.1em",
@@ -24,47 +24,50 @@ const HeroSection = () => (
         zIndex: 1,
         pointerEvents: "none",
         lineHeight: 1,
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        width: "100%",
       }}
     >
       PLAY <br /> SCHOOL
     </span>
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 relative z-10">
-      <div className="max-w-xl mt-8">
-        <h1 className="text-[4rem] md:text-[6rem] font-semibold mb-2 leading-none">
-          Admission
-        </h1>
-        <div className="flex items-center gap-3 mb-2">
-          <span className="text-xl md:text-2xl font-bold text-yellow-300 tracking-wide">
-            OPEN FOR
-          </span>
-          <span className="text-3xl md:text-5xl font-extrabold text-yellow-400 tracking-wider">
-            2025–2026
-          </span>
+    {/* Responsive two-column layout */}
+    <div className="container mx-auto py-[50px] relative z-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-16">
+        {/* Left: Text and Button */}
+        <div className="w-full md:w-1/2 flex flex-col items-start sm:items-center md:items-start text-left lg:text-left">
+          <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] font-bold mb-4 leading-none">
+            Admission
+          </h1>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 mb-4">
+            <span className="text-lg md:text-lg lg:text-2xl font-bold text-yellow-300 tracking-wide">
+              OPEN FOR
+            </span>
+            <span className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-yellow-400 tracking-wider">
+              2025–2026
+            </span>
+          </div>
+          <p className="mb-8 text-sm md:text-base lg:text-lg font-medium tracking-wide">
+            Play ground &nbsp;|&nbsp; Free school &nbsp;|&nbsp; After school
+          </p>
+          <UiButton
+            color="rgb(0 182 170)"
+            textColor="#fff"
+            borderColor="rgb(0 182 170)"
+            className='text-base md:text-lg lg:text-xl px-6 py-3 w-full sm:w-auto lg:w-[60%] font-semibold mt-4 mb-2'
+          >
+            Enroll Now
+          </UiButton>
         </div>
-        <p className="mb-8 text-xs md:text-sm font-medium tracking-wide">
-          Play ground &nbsp;|&nbsp; Free school &nbsp;|&nbsp; After school
-        </p>
-        <UiButton
-          color="rgb(0 182 170)"
-          textColor="#fff"
-          borderColor="rgb(0 182 170)"
-          // style={{
-          //   fontSize: "1.25rem",
-          //   padding: "14px 48px",
-          //   marginTop: "10px",
-          //   fontWeight: 400
-          // }}
-          className='text-[1.25rem] px-[0.875rem] py-[1.1rem] w-full md:w-[44%] font-medium mt-4 mb-2 text-xl'
-        >
-          Enroll Now
-        </UiButton>
-      </div>
-      <div className="relative mt-10 md:mt-0">
-        <img src="images/bg_img/bg2.png" alt="" className="w-[500px] h-[350px] rounded-xl shadow-xl opacity-75" />
+        {/* Right: Image */}
+        <div className="w-full md:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
+          <img
+            src="images/bg_img/bg2.png"
+            alt=""
+            className="w-full max-w-[350px] md:max-w-[500px] lg:max-w-[600px] h-auto rounded-xl shadow-xl"
+          />
+        </div>
       </div>
     </div>
-    
   </section>
 );
 

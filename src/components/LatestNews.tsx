@@ -19,7 +19,7 @@ const LatestNews = () => {
       title: "Make learning fun for your kids",
       date: "June 10, 2017",
       excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img4.jpg"
+      image: "/images/gallery/img1.jpg"
     },
     {
       title: "Make learning fun for your kids",
@@ -37,7 +37,7 @@ const LatestNews = () => {
       title: "Make learning fun for your kids",
       date: "June 10, 2017",
       excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img4.jpg"
+      image: "/images/gallery/img1.jpg"
     }
   ];
 
