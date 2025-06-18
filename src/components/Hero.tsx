@@ -34,13 +34,20 @@ const HeroSection = () => (
     <div className="container mx-auto py-[50px] relative z-10">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-16">
         {/* Left: Text and Button */}
-        <div className="w-full md:w-1/2 flex flex-col items-start sm:items-center md:items-start text-left lg:text-left">
-          <h1 className="text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] font-bold mb-4 leading-none">
-            Admission
+        <div className="w-full md:w-1/2 flex flex-col items-center sm:items-center md:items-start text-left lg:text-left">
+          <h1
+            className="pb-8 font-bold mb-4 leading-none  text-center md:text-start"
+            style={{
+              fontSize: "4.5vw", // Responsive font size using vw
+              maxWidth: "100%",
+              lineHeight: 1.1,
+            }}
+          >
+            Mount Litera Zee <span className="text-yellow-400">School</span> K12, Tikamgarh MP
           </h1>
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 mb-4">
             <span className="text-lg md:text-lg lg:text-2xl font-bold text-yellow-300 tracking-wide">
-              OPEN FOR
+              Admission OPEN FOR
             </span>
             <span className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-yellow-400 tracking-wider">
               2025–2026
@@ -63,7 +70,21 @@ const HeroSection = () => (
           <img
             src="images/bg_img/bg2.png"
             alt=""
-            className="w-full max-w-[350px] md:max-w-[500px] lg:max-w-[600px] h-auto rounded-xl shadow-xl"
+            className="
+              w-full
+              max-w-[320px]
+              sm:max-w-[500px]
+              md:max-w-[700px]
+              lg:max-w-[850px]
+              xl:max-w-[1000px]
+              min-h-[300px]
+
+              md:min-h-[300px]
+              lg:min-h-[400px]
+              xl:min-h-[500px]
+              rounded-xl
+              shadow-xl
+            "
           />
         </div>
       </div>

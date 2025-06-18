@@ -57,7 +57,7 @@ const Footer = () => {
             return (
               <div key={idx} className="flex items-center align-middle gap-4 w-full md:w-auto">
                 <Icon className="w-10 h-10 min-w-10 min-h-10 text-[#00e6ef] mt-1" />
-                <span className="whitespace-pre-line">{item.label}</span>
+                <span className="whitespace-pre-line text-[14px] sm:text-[16px]">{item.label}</span>
               </div>
             );
           })}

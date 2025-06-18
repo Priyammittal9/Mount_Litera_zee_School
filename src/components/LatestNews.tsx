@@ -1,51 +1,44 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Mail, Phone } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const LatestNews = () => {
   const newsItems = [
     {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img2.jpg"
+      title: "DR.S R SUMIT UPADHYAY",
+      position: "Chairman",
+      experience: "20+ Years",
+      email: "srupadhyaymamorial@gmail.com",
+      phone: "+91 90098 25703",
+      image: "/images/gallery/img3.jpg",
+      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
     },
     {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img3.jpg"
+      title: "ADV PREETI UPADHYAY",
+      position: "Chairman",
+      experience: "15+ Years",
+      email: "preetiupadhyay2008@gmail.com",
+      phone: "+91 97533 57555",
+      image: "/images/gallery/img2.jpg",
+      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
     },
     {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img1.jpg"
+      title: "SHILPI OJHA VISHWAKARMA",
+      position: "Director",
+      experience: "12+ Years",
+      email: "ShilpiVishwakarma12345@gmail.com",
+      phone: "+91 83196 03391",
+      image: "/images/gallery/img1.jpg",
+      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
     },
-    {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img2.jpg"
-    },
-    {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img3.jpg"
-    },
-    {
-      title: "Make learning fun for your kids",
-      date: "June 10, 2017",
-      excerpt: "Appropriately engage diverse resources for next-generation systems. Professionally foster extensive paradigms vis-a-vis multidisciplinary systems. Synergistically deploy maintainable products and frictionless methodologies.",
-      image: "/images/gallery/img1.jpg"
-    }
   ];
 
   return (
     <section id='news' className="py-16 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-2">Latest News</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Meet Our Dedicated Faculty
+</h2>
+<p className='text-lg text-gray-600 max-w-3xl mx-auto opacity-70 pb-12 pt-6'>Our experienced and qualified teachers are committed to providing the best education and guidance to every student.</p>
         </div>
         <div className="relative">
           <Carousel className="w-full">
@@ -95,14 +88,24 @@ const LatestNews = () => {
                       />
                     </div>
                     <div className="flex-1 flex flex-col items-start">
-                      <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
+                      <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{item.title} <br />
+                        <span className='font-semibold'>Position</span> {item.position}
+                      </h3>
                       <div className="flex items-center space-x-2 text-blue-600 mb-2">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                         </svg>
-                        <span className="text-xs sm:text-sm font-medium">{item.date}</span>
+                        <span className="text-xs sm:text-sm font-medium">experience :- {item.experience}</span>
                       </div>
-                      <p className="text-gray-600 mb-3 leading-relaxed text-xs sm:text-sm">{item.excerpt}</p>
+                      <div className="flex items-center gap-2 text-gray-600 mb-1 text-xs sm:text-sm">
+                        <Mail className="w-4 h-4 text-pink-600" />
+                        <span>{item.email}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-gray-600 mb-3 text-xs sm:text-sm">
+                        <Phone className="w-4 h-4 text-pink-600" />
+                        <span>{item.phone}</span>
+                      </div>
+                      <p className="text-gray-600 mb-3 leading-relaxed text-xs sm:text-sm">{item.desc}</p>
                       <a href="#" className="text-black font-semibold underline underline-offset-2 hover:text-purple-700 transition-colors text-xs sm:text-sm">
                         Read More
                       </a>
@@ -113,7 +116,6 @@ const LatestNews = () => {
             </CarouselContent>
           </Carousel>
         </div>
-        
       </div>
     </section>
   );

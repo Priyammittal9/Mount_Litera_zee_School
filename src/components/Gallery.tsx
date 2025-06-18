@@ -27,8 +27,8 @@ export function Gallery() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             School Gallery
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Take a glimpse into our vibrant school life, modern facilities, and the wonderful moments we create together.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto opacity-70 pb-12 pt-6">
+            Our gallery captures the vibrant spirit of our school life — from academic achievements and cultural events to sports, exhibitions, and everyday classroom moments. Explore the memories we've created together and see our students in action, learning, growing, and thriving
           </p>
         </div>
 

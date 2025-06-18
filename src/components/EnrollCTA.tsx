@@ -35,7 +35,7 @@ const EnrollCTA = () => (
               <path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13A2.5 2.5 0 0 1 19.5 21h-15A2.5 2.5 0 0 1 2 18.5v-13Z" stroke="#43268c" strokeWidth="2" />
               <path d="M6 8h12M6 12h8" stroke="#43268c" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            <span className="tracking-wide">+91 5602200</span>
+            <span className="tracking-wide">+91 97533 57555</span>
             <span className="text-base font-normal ml-2">(Indai, Madhya Pradesh)</span>
           </div>
         </div>

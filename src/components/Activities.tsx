@@ -19,15 +19,9 @@ const Activities = () => (
           Main Kids Activites
         </h3>
         <p className="text-gray-700 mb-2 text-sm">
-          Appropriately engage diverse resources for next-generation systems.
-          Professionally foster extensive paradigms vis-a-vis multidisciplinary
-          systems. Synergistically deploy maintainable products and frictionless
-          methodologies.
+         Our extra-curricular and co-curricular programs are designed to nurture the unique skills and talents of each child. From dramatics to debates, arts to music, sports to yoga and martial arts, MLZS Bhopal takes care of all aspects of a child's development.
         </p>
-        <p className="text-gray-700 mb-6 text-sm">
-          Appropriately formulate open-source leadership vis-a-vis open-source
-          e-markets. Assertively reconceptualize world-class catalysts for change
-        </p>
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5 mb-8">
           {activities.map((activity, idx) => (
             <div key={idx} className="flex items-center gap-4">
