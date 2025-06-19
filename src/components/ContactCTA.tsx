@@ -4,6 +4,7 @@ import z from "zod";
 import { ToastContainer, toast } from "react-toastify";
 import { useMutation } from "@tanstack/react-query";
 import { postForm } from "@/http/api";
+import { Loader2 } from "lucide-react";
 
 // Types and Schema
 const schema = z.object({
@@ -135,14 +136,31 @@ const ContactCTA = () => {
                 </div>
 
                 {/* Submit */}
-                <div className="flex justify-end mt-2">
+                {/* <div className="flex justify-end mt-2">
                   <button
                     type="submit"
                     className="bg-[#43268c] text-white px-10 py-3 rounded-xl font-semibold shadow-md hover:bg-[#2d1a6c] transition-colors text-base w-full capitalize"
+                    disabled={mutation.isPending}
                   >
                     Submit
                   </button>
-                </div>
+                </div> */}
+                <div className="flex justify-end mt-2">
+  <button
+    type="submit"
+    className="bg-[#43268c] text-white px-10 py-3 rounded-xl font-semibold shadow-md hover:bg-[#2d1a6c] transition-colors text-base w-full capitalize flex items-center justify-center gap-2"
+    disabled={mutation.isPending}
+  >
+    {mutation.isPending ? (
+      <>
+        <Loader2 className="animate-spin size-5" />
+        Submitting...
+      </>
+    ) : (
+      "Submit"
+    )}
+  </button>
+</div>
               </form>
             </div>
           </div>
