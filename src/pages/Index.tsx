@@ -10,12 +10,14 @@ import LatestNews from '../components/LatestNews';
 import ContactCTA from '../components/ContactCTA';
 import EnrollCTA from '../components/EnrollCTA';
 import Footer from '../components/Footer';
+import ImageTextSection from '@/components/ImageTextSection';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <ImageTextSection/>
       <Announcements />
       <WhyChooseUs />
       <FeaturedCourses />

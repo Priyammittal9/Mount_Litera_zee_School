@@ -6,7 +6,8 @@ const ImageTextSection = () => {
           {/* Left side - Image */}
           <div className="relative">
             <img 
-              src="/certificate.webp" 
+            //   src="/certificate.webp" 
+            src="/zee-learn-certificate.png"
               alt="Mount Litera Zee School - certificate " 
               className="w-full h-auto rounded-lg shadow-lg"
             />
