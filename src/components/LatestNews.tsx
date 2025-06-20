@@ -10,7 +10,7 @@ const LatestNews = () => {
       email: "srupadhyaymamorial@gmail.com",
       phone: "+91 90098 25703",
       image: "/images/gallery/img3.jpg",
-      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
+      
     },
     {
       title: "ADV PREETI UPADHYAY",
@@ -19,7 +19,7 @@ const LatestNews = () => {
       email: "preetiupadhyay2008@gmail.com",
       phone: "+91 97533 57555",
       image: "/images/gallery/img2.jpg",
-      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
+      
     },
     {
       title: "SHILPI OJHA VISHWAKARMA",
@@ -28,12 +28,12 @@ const LatestNews = () => {
       email: "ShilpiVishwakarma12345@gmail.com",
       phone: "+91 83196 03391",
       image: "/images/gallery/img1.jpg",
-      desc: 'Comfortable, sturdy, stylish, supportive, durable, modern, ergonomic, versatile.'
+      
     },
   ];
 
   return (
-    <section id='news' className="py-16 bg-white relative overflow-hidden">
+    <section id='news' className="py-16 bg-[#f6f6f6] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Meet Our Dedicated Faculty
@@ -87,8 +87,8 @@ const LatestNews = () => {
                         "
                       />
                     </div>
-                    <div className="flex-1 flex flex-col items-start">
-                      <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{item.title} <br />
+                    <div className="flex-1 flex flex-col items-start gap-4">
+                      <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 pt-2">{item.title} <br />
                         <span className='font-semibold'>Position</span> {item.position}
                       </h3>
                       <div className="flex items-center space-x-2 text-blue-600 mb-2">
@@ -105,10 +105,7 @@ const LatestNews = () => {
                         <Phone className="w-4 h-4 text-pink-600" />
                         <span>{item.phone}</span>
                       </div>
-                      <p className="text-gray-600 mb-3 leading-relaxed text-xs sm:text-sm">{item.desc}</p>
-                      <a href="#" className="text-black font-semibold underline underline-offset-2 hover:text-purple-700 transition-colors text-xs sm:text-sm">
-                        Read More
-                      </a>
+                      
                     </div>
                   </div>
                 </CarouselItem>

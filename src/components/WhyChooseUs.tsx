@@ -52,21 +52,7 @@ const WhyChooseUs = () => (
 							</div>
 						))}
 					</div>
-					<UiButton
-						color="#3d246c"
-						textColor="#fff"
-						borderColor="#3d246c"
-						style={{
-							borderRadius: "20px 30px 20px 20px",
-							fontSize: "1rem",
-							fontWeight: 400,
-							minWidth: 120,
-							boxShadow: "2px 6px 0px 0px #e5e5e5",
-						}}
-						className="font-normal px-10 py-3"
-					>
-						View All
-					</UiButton>
+					
 				</div>
 				{/* Right - Image */}
 				<div className="flex-1 flex items-center justify-center relative">

@@ -10,7 +10,11 @@ import LatestNews from '../components/LatestNews';
 import ContactCTA from '../components/ContactCTA';
 import EnrollCTA from '../components/EnrollCTA';
 import Footer from '../components/Footer';
+
 import ImageTextSection from '@/components/ImageTextSection';
+
+import MapSection from '../components/MapSection'; // Make sure this file exists
+
 
 const Index = () => {
   return (
@@ -19,14 +23,15 @@ const Index = () => {
       <Hero />
       <ImageTextSection/>
       <Announcements />
+      <LatestNews />
       <WhyChooseUs />
       <FeaturedCourses />
       <Activities />
       <EnrollCTA />
       <Gallery />
       <Testimonials />
-      <LatestNews />
       <ContactCTA />
+      <MapSection /> {/* Added Map section here */}
       <Footer />
     </div>
   );
