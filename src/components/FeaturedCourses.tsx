@@ -3,27 +3,34 @@ import UiButton from "@/components/ui/UiButton";
 const courses = [
 	{
 		title: "Kids Activity Clubs",
-		age: "",
 		color: "bg-pink-400",
 		icon: "/images/icons_img/icon6.svg",
 	},
 	{
 		title: "Elementary School",
-		age: "",
-		color: "bg-pink-400",
+		color: "bg-green-400",
 		icon: "/images/icons_img/icon7.svg",
 	},
 	{
 		title: "Middle (10-16) Years",
-		age: "",
-		color: "bg-blue-400",
+		color: "bg-yellow-400",
 		icon: "/images/icons_img/icon8.svg",
 	},
 	{
 		title: "Kids' Parties",
-		age: "",
 		color: "bg-blue-400",
-		icon: "/images/icons_img/icon9.svg",
+		icon: "/images/icons_img/icon9.svg", 
+	},
+	{
+		title: "yoga class",
+		color: "bg-pink-400",
+		icon: "/images/icons_img/icon10.svg",
+	},
+	{
+		title: "Art & Craft",
+		age: "",
+		color: "bg-green-400",
+		icon: "/images/icons_img/icon11.svg",
 	},
 ];
 
@@ -74,19 +81,7 @@ const FeaturedCourses = () => {
 								</div>
 							))}
 						</div>
-						 <UiButton
-                      color="#fff"
-                      textColor="#000"
-                      borderColor="#fff"
-                      style={{
-                        fontSize: "1.25rem",
-                        padding: "10px 32px",
-                        marginTop: "10px",
-                        fontWeight: 400
-                      }}
-                    >
-                      View All Courses
-                    </UiButton>
+						 
 					</div>
 				</div>
 			</div>

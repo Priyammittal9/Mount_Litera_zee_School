@@ -66,23 +66,7 @@ const Announcements = () => {
 						<p className="text-gray-500 mb-8 leading-relaxed text-lg md:text-md font-medium">
 							{announcements[current].text}
 						</p>
-						<UiButton
-							color="#3d246c"
-							textColor="#fff"
-							borderColor="#3d246c"
-							style={{
-								borderRadius: "20px 30px 20px 20px",
-								fontSize: "1rem",
-								fontWeight: 400,
-								width: "fit-content",
-								minWidth: 120,
-								boxShadow: "2px 6px 0px 0px #e5e5e5",
-								alignSelf: "center",
-								padding: "8px 30px"
-							}}
-						>
-							View All
-						</UiButton>
+						
 					</div>
 				</div>
 				{/* Decorative dot */}
